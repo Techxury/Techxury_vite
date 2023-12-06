@@ -1,0 +1,93 @@
+:root{
+  --pur-color: #fdfdfd ;
+}
+.pur_color{
+  color: var(--pur-color);
+}
+.pr_color{
+  color: #652CB3;
+}
+.hello_world{
+  color: var(--primary-color);
+}
+
+.main_con_title{
+  font-size: 2rem;
+  color: #652CB3;
+  font-weight: 600;
+}
+.main_con_para{
+  font-size: 1.2rem;
+
+}
+
+
+
+
+.ft_right_hd{
+  color: rgb(255, 255, 255);
+}
+
+.gradient_background{
+  background: linear-gradient(300deg, #652CB3, #ff4c68, rgb(238, 255, 0));
+  background-size: 180% 180%;
+  animation: gradient-animation 8s ease infinite;
+}
+@keyframes gradient-animation {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+
+  
+}
+
+
+.pr_img{
+  width: 10rem;
+  height: 10rem;
+  border: 5px solid #652CB3;
+
+}
+@media (max-width:760px){
+  .pr_img{
+    width: 8rem;
+    height: 8rem;
+    border: 5px solid #652CB3;
+  
+  }
+}
+@media (max-width:385px){
+  .pr_img{
+    width: 6rem;
+    height: 6rem;
+    border: 5px solid #652CB3;
+    margin-top: 1rem;
+  
+  }
+}
+.pr_badge{
+  background: #652CB3;
+  color: #fdfdfd;
+  border: 2px solid black;
+}
+.pr_bg_color{
+  background: #EFE9F7;
+  border: 3px solid #652CB3;
+  border-radius: 30px;
+}
+.pr_nav{
+  border: 2px solid #652CB3;
+  color: #652CB3;
+
+}
+.pr_nav ul li{
+  font-size: 1.06rem;
+  border: 1px solid #652CB3;
+
+}
