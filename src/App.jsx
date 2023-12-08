@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 // components links
 import Navbar from './components/Navbar'
-import Main from './pages/Main'
-import Courses from './pages/Courses'
+import Main from './pages/Main/Main'
+import Courses from './pages/Coursesfl/Courses'
 import Footer from './components/Footer'
 import Profile_se from './pages/Profile/Profile_se'
 import Identity from './pages/Profile/Identity'

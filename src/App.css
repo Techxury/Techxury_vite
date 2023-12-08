@@ -8,7 +8,7 @@
   color: #652CB3;
 }
 .hello_world{
-  color: var(--primary-color);
+  color: red;
 }
 
 .main_con_title{
@@ -88,6 +88,96 @@
 }
 .pr_nav ul li{
   font-size: 1.06rem;
-  border: 1px solid #652CB3;
+  /* border: 1px solid #652CB3; */
 
+}
+
+.tabs{
+  cursor: pointer;
+  padding: .5rem .2rem;
+  border-radius: 4px;
+  margin: 0rem .1rem;
+  border-left: 1px solid #652CB3;
+  border-right: 1px solid #652CB3;
+  /* border-bottom: 1px solid white; */
+}
+.active_tabs{
+  color: #652CB3;
+  background: #EFE9F7;
+}
+.content{
+  display: none;
+}
+.active_content{
+  display: block;
+}
+
+
+
+/* courses css srarted */
+.mn_cr_con_row{
+  border: 2px solid #652CB3;
+}
+
+.mn_cr_con_upscroll{
+  width: 18rem;
+  height: 22rem;
+  border: 1px solid #652CB3;
+  border-radius: 10%;
+}
+
+
+.Scrolling{
+  width: 17.8rem;
+  /* background:rgb(243, 90, 90); */
+  /* border: 2px solid black; */
+  /* border-radius: 10%; */
+  height: 18.5rem;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  border: 1px solid grey;
+}
+::-webkit-scrollbar-thumb {
+  background: #652CB3;
+  border-radius: 10px;
+}
+.mn_cr_card{
+  width: 85%;
+  max-height: auto;
+  background: #D742FA;
+  border-radius: 10%;
+  overflow: hidden;
+}
+.mn_cr_card:hover{
+  background: #652CB3;
+  transition: 0.4s;
+
+  transform: scale(1.05);
+}
+.mn_cr_card_btn{
+    color: white;
+    background: #652CB3;
+    padding: 0.3rem 1rem;
+}
+.mn_cr_card_title , .mn_cr_card_desc{
+    color: white;
+}
+.mn_cr_card:hover> .mn_cr_card_btn{
+  color: black;
+  background: rgb(255, 254, 253);
+  transition: 1s;
+}
+.mn_cr_img{
+  width: 100%;
+  height: 10rem;
+}
+.cr_see_btn{
+  background: #D0BFE8;
+  color:#652CB3;
+  border: 2px solid #652CB3;
+  
 }

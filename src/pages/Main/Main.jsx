@@ -1,8 +1,12 @@
 import React from 'react'
+import MnCourses from './MnCourses'
+import Careousel from './Careousel'
 
 const Main = () => {
     return (
         <>
+        {/* <Careousel /> */}
+        <MnCourses />
             <div>
                 <div className="container my-3 mx-auto">
                     <div className="lg:columns-2  sm:columns-1" >
