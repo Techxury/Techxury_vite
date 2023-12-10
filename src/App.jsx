@@ -12,7 +12,8 @@ import Identity from './pages/Profile/Identity'
 import group from './pages/Profile/Group'
 import Mycourses from './pages/Profile/Mycourses'
 import setting from './pages/Profile/Setting'
-
+import Header from './components/Header'
+import Login from './pages/Login'
 // comoponents link end 
 function App() {
   
@@ -20,13 +21,13 @@ function App() {
   return (
     <>
       <Router>
-      <Navbar />
+      <Header />
         <Routes>
           <Route path='/' element={<Main />} /> 
           <Route path='/courses' element={<Courses />} /> 
           <Route path='/profile' element={<Identity />} /> 
-          
-        </Routes>
+          <Route path='/login' element={<Login />} />
+         </Routes>
         <Footer />
       </Router>
     </>

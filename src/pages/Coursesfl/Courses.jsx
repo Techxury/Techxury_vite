@@ -1,9 +1,11 @@
 import React from 'react'
-
+import MnCourses from '../Main/MnCourses'
+import Cr_heading from './Cr_heading'
 function Courses() {
   return (
     <>
-      <h1 className='text-4xl text-red-500 text-bold '>courses system Comming soon</h1>
+      <Cr_heading />
+      <MnCourses />
     </>
   )
 }

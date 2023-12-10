@@ -1,10 +1,13 @@
-import React from 'react'
+
+import React, { Component } from 'react';
 
 const Careousel = () => {
   return (
-    <div>
-      <h1>This is a caresoul components</h1>
-    </div>
+    <>
+      <div className=' bg-orange-400'>
+        sdfsd
+      </div>
+    </>
   )
 }
 

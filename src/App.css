@@ -29,11 +29,13 @@
 }
 
 .gradient_background{
-  background: linear-gradient(300deg, #652CB3, #ff4c68, rgb(238, 255, 0));
+  background: #161617;
+  color: white;
+  /* background: linear-gradient(300deg, #652CB3, #ff4c68, rgb(238, 255, 0));
   background-size: 180% 180%;
-  animation: gradient-animation 8s ease infinite;
+  animation: gradient-animation 8s ease infinite; */
 }
-@keyframes gradient-animation {
+/* @keyframes gradient-animation {
   0%{
     background-position: 0% 50%;
   }
@@ -45,7 +47,7 @@
   }
 
   
-}
+} */
 
 
 .pr_img{
@@ -181,3 +183,51 @@
   border: 2px solid #652CB3;
   
 }
+
+
+
+.cr_head_design{
+  height: 60vh;
+  background: #ff4c68;
+  /* filter: blur(20px); */
+  /* -webkit-backdrop-filter: blur(20px); */
+}
+.cr_head_text{
+  width: 30vw;
+}
+
+
+
+/* profile css */
+.pr_main_con{
+  border: 2px solid #652CB3;
+  border-radius: 20px;
+}
+.pr_infor_input{
+  appearance: none;
+  border: 2px solid rgb(138, 65, 206, 0.818);
+  height: 2rem;
+  width: 95%;
+  border-radius: 0.5rem;
+  /* font-size: 1.2rem; */
+  font-weight: bold;
+  color: blueviolet;
+  outline: red;
+  cursor: pointer;
+  padding-left: .5rem;
+}
+.pr_infor_input:hover{
+  border: 2px solid orangered;
+}
+.pr_infor_input:focus{
+  outline: none;
+  border: 2px solid orangered;
+}
+/* .pr_ex_text{
+  width: 60vw;
+}
+@media(maxwidth:620px){
+  .pr_ex_text{
+    width: 100vw;
+  }
+} */

@@ -21,6 +21,7 @@ const Navbar = () => {
     { name: "About", url: "/" },
     { name: "Contact", url: "/" },
     { name: "Profile", url: "/profile" },
+    { name: "Login", url: "/" },
     
   ];
   return (

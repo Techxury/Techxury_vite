@@ -1,6 +1,7 @@
 import React from 'react'
 import MnCourses from './MnCourses'
 import Careousel from './Careousel'
+// import Header from '../../components/Header'
 
 const Main = () => {
     return (

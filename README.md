@@ -9,3 +9,5 @@ Currently, two official plugins are available:
 
 
 last update : 8 dec 2023
+
+update : 10 dec 2023 (login page, profile page)
