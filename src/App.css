@@ -11,6 +11,17 @@
   color: red;
 }
 
+
+.header_ac_profile{
+  /* display: none; */
+  background: #652CB3;
+
+  /* color: white; */
+  right: 6rem;
+  top: 3rem;
+}
+
+
 .main_con_title{
   font-size: 2rem;
   color: #652CB3;
