@@ -11,3 +11,14 @@ Currently, two official plugins are available:
 last update : 8 dec 2023
 
 update : 10 dec 2023 (login page, profile page)
+
+navbar updated full up to date
+
+backend devloper start backend development any problem in fronted please contact user:) Error...
+
+
+Notice:-
+backend developer in header nav bar user login side some code comments check out carefully 
+
+
+Thank you Devloper
