@@ -27,7 +27,7 @@ const Header = () => {
     <>
     {(ProfileDisplay || ScreenWidth > 1023) && (<div className='hd_back_blur'></div>
     )}
-      <nav className='flex lg:justify-around sm:justify-between bg-purple-700 py-2 text-white'>
+      <nav className='flex lg:justify-around sm:justify-between  py-2 text-white bg-black'>
         <div className='flex place-items-center lg:ml-0 sm:ml-3'><Link className='text-2xl flex'><img src="img/final.webp" width={30} height={30} alt="" srcset="" className='mr-2' />Techxury</Link></div>
         <div>
           {(ProfileDisplay || ScreenWidth > 1023) && (

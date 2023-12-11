@@ -11,7 +11,7 @@ const Identity = () => {
     const [toggleState, setToggleState] = useState(1)
 
 
-    const Toggletabs =   (index)=> {
+    const Toggletabs = (index) => {
         setToggleState(index);
 
     }
@@ -19,11 +19,13 @@ const Identity = () => {
     return (
         <>
             <div className='container mx-auto my-3 '>
-                <div className='grid lg:grid-cols-3 gap-6  sm:grid-cols-1 p-3 '>
-                    <div className='lg:col-span-2 sm:col-span-3 flex justify-evenly pr_bg_color' >
-                        <div className='my-3'> <img src="https://images.pexels.com/photos/53364/girls-women-happy-sexy-53364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="pr_img rounded-full" alt="" srcset="" /></div>
+                <div className='grid lg:grid-cols-4 gap-6  sm:grid-cols-1 p-3 '>
+                    <div className='lg:col-span-3 sm:col-span-4 flex   pr_bg_color' >
+                        <div className='my-3 lg:mx-20 md:mx-10 sm:mx-6 '>
+                            <img src="https://images.pexels.com/photos/53364/girls-women-happy-sexy-53364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="pr_img " alt="" srcset="" />
+                        </div>
 
-                        <div className=' flex flex-col justify-evenly'>
+                        <div className=' flex flex-col justify-evenly ml-3'>
                             <h1 className='text-2xl pr_color'>Error@8207</h1>
                             <h1 className='pr_color'>Userid:23456@Techxury</h1>
                             <h1 className='pr_color'>Email id:23456@Techxury</h1>
@@ -33,7 +35,7 @@ const Identity = () => {
                         </div>
                     </div>
 
-                    <div className='lg:col-span-1 sm:col-span-3 pr_bg_color'>
+                    <div className='lg:col-span-1 sm:col-span-4 pr_bg_color'>
                         <h1 className=' text-center mt-2 text-xl'>Keep Your Profile:</h1>
                         <div className='flex justify-evenly my-3'>
                             <div className='border border-black text-center rounded-lg'>
@@ -77,10 +79,10 @@ const Identity = () => {
                 <nav>
                     <div className='pr_nav'>
                         <ul className='block_tabs flex lg:gap-3 sm:gap-1 px-1 font-bold sm:mx-auto lg:mx-0'>
-                            <li className={toggleState === 1 ? 'tabs active_tabs  ' : 'tabs '} onClick={()=> Toggletabs(1)}>Profile</li>
-                            <li className={toggleState === 2 ? 'tabs active_tabs  ' : 'tabs '} onClick={()=> Toggletabs(2)}>MyCourses</li>
-                            <li className={toggleState === 3 ? 'tabs active_tabs  ' : 'tabs '} onClick={()=> Toggletabs(3)}>Groupes</li>
-                            <li className={toggleState === 4 ? 'tabs active_tabs  ' : 'tabs '} onClick={()=> Toggletabs(4)}>Setting</li>
+                            <li className={toggleState === 1 ? 'tabs active_tabs  ' : 'tabs '} onClick={() => Toggletabs(1)}>Profile</li>
+                            <li className={toggleState === 2 ? 'tabs active_tabs  ' : 'tabs '} onClick={() => Toggletabs(2)}>MyCourses</li>
+                            <li className={toggleState === 3 ? 'tabs active_tabs  ' : 'tabs '} onClick={() => Toggletabs(3)}>Groupes</li>
+                            <li className={toggleState === 4 ? 'tabs active_tabs  ' : 'tabs '} onClick={() => Toggletabs(4)}>Setting</li>
                         </ul>
                     </div>
                 </nav>
@@ -88,7 +90,7 @@ const Identity = () => {
                 <div className="content_tabs">
 
                     <div
-                    className={toggleState === 1 ? 'content active_content' : 'content'}>
+                        className={toggleState === 1 ? 'content active_content' : 'content'}>
                         <Profile_se />
 
                     </div>

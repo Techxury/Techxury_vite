@@ -32,7 +32,6 @@ nav{
   display: none;
   position: absolute;
   top: 0rem;
-
   right: 0.3rem;
   font-size: 3rem;
 }
@@ -114,8 +113,8 @@ nav{
 
 .pr_img {
   width: 10rem;
-  height: 10rem;
-  border: 5px solid #652cb3;
+  height: 13rem;
+  /* border: 5px solid #652cb3; */
 }
 @media (max-width: 760px) {
   .pr_img {
