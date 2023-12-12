@@ -17,8 +17,7 @@ navbar updated full up to date
 backend devloper start backend development any problem in fronted please contact user:) Error...
 
 
-Notice:-
-backend developer in header nav bar user login side some code comments check out carefully 
-
+12/12/23 update header in add profile and logout button
 
 Thank you Devloper
+I hope enjoy in coding journey 

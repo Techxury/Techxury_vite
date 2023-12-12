@@ -53,7 +53,7 @@ nav {
   }
   .hd_back_blur {
     display: block;
-    background: rgba(10, 10, 10, 0.349);
+    background: rgba(10, 10, 10, 0.842);
     z-index: 1;
     /* filter: blur(4px); */
     backdrop-filter: blur(1px);

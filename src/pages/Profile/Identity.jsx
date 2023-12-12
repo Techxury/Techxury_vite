@@ -35,7 +35,7 @@ const Identity = () => {
                         </div>
                     </div>
 
-                    <div className='lg:col-span-1 sm:col-span-4 pr_bg_color'>
+                    <div className='lg:col-span-1 sm:col-span-4 pr_bg_color -z-10'>
                         <h1 className=' text-center mt-2 text-xl'>Keep Your Profile:</h1>
                         <div className='flex justify-evenly my-3'>
                             <div className='border border-black text-center rounded-lg'>
