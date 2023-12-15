@@ -41,7 +41,7 @@ const Header = () => {
               <li className='mt-1'><NavLink to='/courses' className={({isActive})=> `px-2 py-2 font-semibold ${isActive ? 'text-black bg-white' : 'text-white bg-none'} rounded-lg`}>Courses</NavLink></li>
               <li className='mt-1'><NavLink to='/about' className={({isActive})=> `px-2 py-2 font-semibold ${isActive ? 'text-black bg-white' : 'text-white bg-none'} rounded-lg`}>About</NavLink></li>
               <li className='mt-1'><NavLink to='/profile' className={({isActive})=> `px-2 py-2 font-semibold ${isActive ? 'text-black bg-white' : 'text-white bg-none'} rounded-lg`}>Profile</NavLink></li>
-              <li className='mt-1'><button className=''><NavLink to='/login' className='text-white bg-orange-500 p-3 rounded-lg'>Login</NavLink></button></li>
+              <li className='mt-1'><button className=''><NavLink to='/login' className='text-white font-medium bg-orange-500 py-2 px-3 rounded-lg'>Login</NavLink></button></li>
 
               <div>
                 <li className='flex place-items-center my-auto' onClick={profile_showing}>
@@ -52,7 +52,7 @@ const Header = () => {
                 </li>
                 {Profile_setting && (<li><div className='lg:border border-black px-3 lg:text-black mt-2 lg:bg-gray-200 sm:text-white font-medium' >
                   <ul className='flex flex-col'>
-                    <li><NavLink to='/profile' className={({isActive})=> `px-2 py-2 font-semibold ${isActive ? 'text-orange-500 ' : 'text-black bg-none'} rounded-lg`}>My Profie</NavLink></li>
+                    <li><NavLink to='/profile' className={({isActive})=> `px-2 py-2 font-semibold ${isActive ? 'text-orange-500 ' : 'lg:text-black sm:text-white bg-none'} rounded-lg`}>My Profie</NavLink></li>
                     <li><NavLink className='px-2 py-2 font-semibold'>Logout</NavLink></li>
                   </ul>
                 </div></li>)}

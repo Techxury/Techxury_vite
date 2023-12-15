@@ -175,58 +175,39 @@ nav {
 
 
 /* courses css srarted */
+.mn_courses_con{
+  width: 18rem;
+  height: auto;
+  border: .2px solid rgb(15, 15, 15);
+  margin: 0.5rem 0;
+}
+.mn_courses_con:hover{
+  background: #940B92;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* text-align: center; */
+  color: white;
+  transition: 0.4s;
+  transform: scale(1.05);
+}
 .mn_cr_con_row {
   border: 2px solid #652cb3;
 }
-
-.mn_cr_con_upscroll {
-  width: 18rem;
-  height: 22rem;
-  border: 1px solid #652cb3;
-  border-radius: 10%;
-}
-
-.Scrolling {
-  width: 17.8rem;
-  /* background:rgb(243, 90, 90); */
-  /* border: 2px solid black; */
-  /* border-radius: 10%; */
-  height: 18.5rem;
-  overflow: hidden;
-  overflow-y: scroll;
-}
-
-::-webkit-scrollbar {
-  width: 8px;
-  border: 1px solid grey;
-}
-::-webkit-scrollbar-thumb {
-  background: #652cb3;
-  border-radius: 10px;
-}
-.mn_cr_card {
-  width: 85%;
-  max-height: auto;
-  background: #652cb3;
-  /* color: #161617; */
-  border-radius: 10%;
-  overflow: hidden;
-}
-.mn_cr_card:hover {
-  background: #652cb3;
-  transition: 0.4s;
-
-  transform: scale(1.05);
-}
 .mn_cr_card_btn {
   color: white;
-  background: #652cb3;
+  background: #000000;
   padding: 0.3rem 1rem;
+  border-radius: 4px;
+
 }
-.mn_cr_card_title,
+/* .mn_cr_card_title,
 .mn_cr_card_desc {
-  color: white;
+  
+  color: #652cb3;
 }
+.mn_courses_con:hover > .mn_cr_card_desc {
+  
+  color: #ffffff;
+} */
 .mn_cr_card:hover > .mn_cr_card_btn {
   color: black;
   background: rgb(255, 254, 253);
@@ -234,8 +215,9 @@ nav {
 }
 .mn_cr_img {
   width: 100%;
-  height: 10rem;
+  height: 12rem;
 }
+
 .cr_see_btn {
   background: #d0bfe8;
   color: #652cb3;
