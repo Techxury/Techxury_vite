@@ -52,8 +52,8 @@ const Header = () => {
                 </li>
                 {Profile_setting && (<li><div className='lg:border border-black px-3 lg:text-black mt-2 lg:bg-gray-200 sm:text-white font-medium' >
                   <ul className='flex flex-col'>
-                    <li><NavLink to='/profile' className={({isActive})=> `px-2 py-2 font-semibold ${isActive ? 'text-orange-500 ' : 'lg:text-black sm:text-white bg-none'} rounded-lg`}>My Profie</NavLink></li>
-                    <li><NavLink className='px-2 py-2 font-semibold'>Logout</NavLink></li>
+                    <li><NavLink to='/profile' className={({isActive})=> `px-1 py-2 font-semibold ${isActive ? 'text-orange-500 ' : 'lg:text-black sm:text-white bg-none'} rounded-lg`}>My Profie</NavLink></li>
+                    <li><NavLink className='px-1 py-2 font-semibold'>Logout</NavLink></li>
                   </ul>
                 </div></li>)}
               </div>
