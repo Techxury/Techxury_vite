@@ -5,7 +5,7 @@ const Courses = () => {
     return (
         <>
             <div className='' >
-                <div className='text-3xl pr_color font-bold text-center'>Popular Courses</div>
+                <div className='lg:text-5xl sm:text-4xl text-black font-bold text-center'>Popular Courses</div>
                 <div className='text-right'><Link to="/courses" className='cr_see_btn text-sm font-bold px-6 lg:mr-10 md:mr-6 sm:mr-3'>See all Courses</Link></div>
             </div>
 

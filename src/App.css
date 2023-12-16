@@ -187,11 +187,11 @@ nav {
   /* text-align: center; */
   color: white;
   transition: 0.4s;
-  transform: scale(1.05);
+  transform: scale(1.07);
 }
-.mn_cr_con_row {
+/* .mn_cr_con_row {
   border: 2px solid #652cb3;
-}
+} */
 .mn_cr_card_btn {
   color: white;
   background: #000000;

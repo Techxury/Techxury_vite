@@ -13,7 +13,9 @@ import group from './pages/Profile/Group'
 import Mycourses from './pages/Profile/Mycourses'
 import setting from './pages/Profile/Setting'
 import Header from './components/Header'
-import Login from './pages/Login'
+import Login from './pages/Login/Login'
+import Otp from './pages/Login/Otp'
+import About from './pages/About/About'
 // comoponents link end 
 function App() {
   
@@ -27,6 +29,8 @@ function App() {
           <Route path='/courses' element={<Courses />} /> 
           <Route path='/profile' element={<Identity />} /> 
           <Route path='/login' element={<Login />} />
+<Route path='/About' element={<About />} />
+          <Route path='/login/Otp' element={<Otp />} />
          </Routes>
         <Footer />
       </Router>
