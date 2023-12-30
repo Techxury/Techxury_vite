@@ -1,145 +1,360 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { CiClock2 } from "react-icons/ci";
+// import React from 'react'
+import './Mainstyling.css'
+import CoursesNews from './CoursesNews';
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Link } from 'react-router-dom';
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+// import required modules
+import { Pagination } from 'swiper/modules';
+import { FaBook } from "react-icons/fa";
+import { IoMdTime } from "react-icons/io";
+import { FaArrowRightLong } from "react-icons/fa6";
+
 const Courses = () => {
     return (
         <>
-            <div className='' >
-                <div className='lg:text-5xl sm:text-4xl text-black font-bold text-center'>Popular Courses</div>
-                <div className='text-right'><Link to="/courses" className='cr_see_btn text-sm font-bold px-6 lg:mr-10 md:mr-6 sm:mr-3'>See all Courses</Link></div>
-            </div>
-
-            <div className="mn_cr_con_row mx-2 rounded-lg ">
-                <div className='my-3 flex flex-wrap'>
+            <CoursesNews />
 
 
-                    <div className='border-2 mn_courses_con mx-auto'>
-                        {/* <h1 className='text-center text-lg font-bold pr_color'>Management</h1> */}
-                        <img className='mn_cr_img' src="https://d2ms8rpfqc4h24.cloudfront.net/Guide_to_Full_Stack_Development_000eb0b2d0.jpg" alt="" srcset="" />
-                        <div className='p-1 '>
-                            <h1 className='font-bold text-xl'>Web Development</h1>
-                            <p className='mn_cr_card_desc text-sm text-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, minima?</p>
-                            <div className='flex justify-between'>
-                                <h5 className='flex place-items-end'>         <CiClock2 className='pb-1 text-base ' /><p className='text-sm'>3.0 Hrs</p></h5>
-                                <button className='mn_cr_card_btn'>Explore</button>
-                            </div>
-                        </div>
-                    </div>
+            <div className='container mx-auto my-3'>
+                <h1 className='text-white text-2xl font-semibold flex'>Famous courses <FaArrowRightLong className='my-auto ml-2 '/> </h1>
 
-                    <div className='border-2 mn_courses_con mx-auto'>
-                        {/* <h1 className='text-center text-lg font-bold pr_color'>Management</h1> */}
-                        <img className='mn_cr_img' src="https://d2ms8rpfqc4h24.cloudfront.net/Guide_to_Full_Stack_Development_000eb0b2d0.jpg" alt="" srcset="" />
-                        <div className='p-1 '>
-                            <h1 className='font-bold text-xl'>Web Development</h1>
-                            <p className='mn_cr_card_desc text-sm text-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, minima?</p>
-                            <div className='flex justify-between'>
-                                <h5 className='flex place-items-end'>         <CiClock2 className='pb-1 text-base ' /><p className='text-sm'>3.0 Hrs</p></h5>
-                                <button className='mn_cr_card_btn'>Explore</button>
-                            </div>
-                        </div>
-                    </div>
+                <div>
+                    <Swiper
+                        slidesPerView={1}
+                        spaceBetween={8}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        breakpoints={{
+                            '@0.00': {
+                                slidesPerView: 1,
+                                spaceBetween: 10,
+                            },
+                            '@0.75': {
+                                slidesPerView: 2,
+                                spaceBetween: 20,
+                            },
+                            '@1.00': {
+                                slidesPerView: 3,
+                                spaceBetween: 40,
+                            },
+                            '@1.50': {
+                                slidesPerView: 4,
+                                spaceBetween: 50,
+                            },
+                        }}
+                        modules={[Pagination]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
+                            <Link to="/profile">
+                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
+                                <div >
+                                    <div className=' ml-2'>
+                                        <h6 className='text-left text-base '>Web development</h6>
+                                        <h4 className='text-left text-3xl font-semibold'>Data Mining</h4>
 
+                                        <p className='mn-cr-name mt-2 text-left text-gray-400 font-semibold capitalize '>narendra Modi </p>
 
-                    <div className='border-2 mn_courses_con mx-auto'>
-                        {/* <h1 className='text-center text-lg font-bold pr_color'>Management</h1> */}
-                        <img className='mn_cr_img' src="https://d2ms8rpfqc4h24.cloudfront.net/Guide_to_Full_Stack_Development_000eb0b2d0.jpg" alt="" srcset="" />
-                        <div className='p-1 '>
-                            <h1 className='font-bold text-xl'>Web Development</h1>
-                            <p className='mn_cr_card_desc text-sm text-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, minima?</p>
-                            <div className='flex justify-between'>
-                                <h5 className='flex place-items-end'>         <CiClock2 className='pb-1 text-base ' /><p className='text-sm'>3.0 Hrs</p></h5>
-                                <button className='mn_cr_card_btn'>Explore</button>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div className='border-2 mn_courses_con mx-auto'>
-                        {/* <h1 className='text-center text-lg font-bold pr_color'>Management</h1> */}
-                        <img className='mn_cr_img' src="https://d2ms8rpfqc4h24.cloudfront.net/Guide_to_Full_Stack_Development_000eb0b2d0.jpg" alt="" srcset="" />
-                        <div className='p-1 '>
-                            <h1 className='font-bold text-xl'>Web Development</h1>
-                            <p className='mn_cr_card_desc text-sm text-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, minima?</p>
-                            <div className='flex justify-between'>
-                                <h5 className='flex place-items-end'>         <CiClock2 className='pb-1 text-base ' /><p className='text-sm'>3.0 Hrs</p></h5>
-                                <button className='mn_cr_card_btn'>Explore</button>
-                            </div>
-                        </div>
-                    </div>
+                                    </div>
+                                    <div className='flex justify-between mx-2 my-2'>
+                                        <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
+                                        <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
+                                    </div>
+                                </div>
+                            </Link>
+                        </SwiperSlide>
 
 
+                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
+                            <Link to="/profile">
+                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
+                                <div >
+                                    <div className=' ml-2'>
+                                        <h6 className='text-left text-base '>Web development</h6>
+                                        <h4 className='text-left text-3xl font-semibold'>Data Mining</h4>
 
+                                        <p className='mn-cr-name mt-2 text-left text-gray-400 font-semibold capitalize '>narendra Modi </p>
+
+                                    </div>
+                                    <div className='flex justify-between mx-2 my-2'>
+                                        <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
+                                        <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
+                                    </div>
+                                </div>
+                            </Link>
+                        </SwiperSlide>
+
+
+                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
+                            <Link to="/profile">
+                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
+                                <div >
+                                    <div className=' ml-2'>
+                                        <h6 className='text-left text-base '>Web development</h6>
+                                        <h4 className='text-left text-3xl font-semibold'>Data Mining</h4>
+
+                                        <p className='mn-cr-name mt-2 text-left text-gray-400 font-semibold capitalize '>narendra Modi </p>
+
+                                    </div>
+                                    <div className='flex justify-between mx-2 my-2'>
+                                        <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
+                                        <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
+                                    </div>
+                                </div>
+                            </Link>
+                        </SwiperSlide>
+
+
+                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
+                            <Link to="/profile">
+                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
+                                <div >
+                                    <div className=' ml-2'>
+                                        <h6 className='text-left text-base '>Web development</h6>
+                                        <h4 className='text-left text-3xl font-semibold'>Data Mining</h4>
+
+                                        <p className='mn-cr-name mt-2 text-left text-gray-400 font-semibold capitalize '>narendra Modi </p>
+
+                                    </div>
+                                    <div className='flex justify-between mx-2 my-2'>
+                                        <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
+                                        <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
+                                    </div>
+                                </div>
+                            </Link>
+                        </SwiperSlide>
+
+
+                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
+                            <Link to="/profile">
+                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
+                                <div >
+                                    <div className=' ml-2'>
+                                        <h6 className='text-left text-base '>Web development</h6>
+                                        <h4 className='text-left text-3xl font-semibold'>Data Mining</h4>
+
+                                        <p className='mn-cr-name mt-2 text-left text-gray-400 font-semibold capitalize '>narendra Modi </p>
+
+                                    </div>
+                                    <div className='flex justify-between mx-2 my-2'>
+                                        <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
+                                        <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
+                                    </div>
+                                </div>
+                            </Link>
+                        </SwiperSlide>
+
+                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
+                            <Link to="/profile">
+                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
+                                <div >
+                                    <div className=' ml-2'>
+                                        <h6 className='text-left text-base '>Web development</h6>
+                                        <h4 className='text-left text-3xl font-semibold'>Data Mining</h4>
+
+                                        <p className='mn-cr-name mt-2 text-left text-gray-400 font-semibold capitalize '>narendra Modi </p>
+
+                                    </div>
+                                    <div className='flex justify-between mx-2 my-2'>
+                                        <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
+                                        <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
+                                    </div>
+                                </div>
+                            </Link>
+                        </SwiperSlide>
+
+
+                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
+                            <Link to="/profile">
+                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
+                                <div >
+                                    <div className=' ml-2'>
+                                        <h6 className='text-left text-base '>Web development</h6>
+                                        <h4 className='text-left text-3xl font-semibold'>Data Mining</h4>
+
+                                        <p className='mn-cr-name mt-2 text-left text-gray-400 font-semibold capitalize '>narendra Modi </p>
+
+                                    </div>
+                                    <div className='flex justify-between mx-2 my-2'>
+                                        <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
+                                        <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
+                                    </div>
+                                </div>
+                            </Link>
+                        </SwiperSlide>
+
+
+                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
+                            <Link to="/profile">
+                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
+                                <div >
+                                    <div className=' ml-2'>
+                                        <h6 className='text-left text-base '>Web development</h6>
+                                        <h4 className='text-left text-3xl font-semibold'>Data Mining</h4>
+
+                                        <p className='mn-cr-name mt-2 text-left text-gray-400 font-semibold capitalize '>narendra Modi </p>
+
+                                    </div>
+                                    <div className='flex justify-between mx-2 my-2'>
+                                        <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
+                                        <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
+                                    </div>
+                                </div>
+                            </Link>
+                        </SwiperSlide>
+
+
+                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
+                            <Link to="/profile">
+                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
+                                <div >
+                                    <div className=' ml-2'>
+                                        <h6 className='text-left text-base '>Web development</h6>
+                                        <h4 className='text-left text-3xl font-semibold'>Data Mining</h4>
+
+                                        <p className='mn-cr-name mt-2 text-left text-gray-400 font-semibold capitalize '>narendra Modi </p>
+
+                                    </div>
+                                    <div className='flex justify-between mx-2 my-2'>
+                                        <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
+                                        <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
+                                    </div>
+                                </div>
+                            </Link>
+                        </SwiperSlide>
+
+
+                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
+                            <Link to="/profile">
+                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
+                                <div >
+                                    <div className=' ml-2'>
+                                        <h6 className='text-left text-base '>Web development</h6>
+                                        <h4 className='text-left text-3xl font-semibold'>Data Mining</h4>
+
+                                        <p className='mn-cr-name mt-2 text-left text-gray-400 font-semibold capitalize '>narendra Modi </p>
+
+                                    </div>
+                                    <div className='flex justify-between mx-2 my-2'>
+                                        <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
+                                        <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
+                                    </div>
+                                </div>
+                            </Link>
+                        </SwiperSlide>
+
+
+                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
+                            <Link to="/profile">
+                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
+                                <div >
+                                    <div className=' ml-2'>
+                                        <h6 className='text-left text-base '>Web development</h6>
+                                        <h4 className='text-left text-3xl font-semibold'>Data Mining</h4>
+
+                                        <p className='mn-cr-name mt-2 text-left text-gray-400 font-semibold capitalize '>narendra Modi </p>
+
+                                    </div>
+                                    <div className='flex justify-between mx-2 my-2'>
+                                        <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
+                                        <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
+                                    </div>
+                                </div>
+                            </Link>
+                        </SwiperSlide>
+
+
+                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
+                            <Link to="/profile">
+                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
+                                <div >
+                                    <div className=' ml-2'>
+                                        <h6 className='text-left text-base '>Web development</h6>
+                                        <h4 className='text-left text-3xl font-semibold'>Data Mining</h4>
+
+                                        <p className='mn-cr-name mt-2 text-left text-gray-400 font-semibold capitalize '>narendra Modi </p>
+
+                                    </div>
+                                    <div className='flex justify-between mx-2 my-2'>
+                                        <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
+                                        <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
+                                    </div>
+                                </div>
+                            </Link>
+                        </SwiperSlide>
+
+
+                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
+                            <Link to="/profile">
+                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
+                                <div >
+                                    <div className=' ml-2'>
+                                        <h6 className='text-left text-base '>Web development</h6>
+                                        <h4 className='text-left text-3xl font-semibold'>Data Mining</h4>
+
+                                        <p className='mn-cr-name mt-2 text-left text-gray-400 font-semibold capitalize '>narendra Modi </p>
+
+                                    </div>
+                                    <div className='flex justify-between mx-2 my-2'>
+                                        <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
+                                        <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
+                                    </div>
+                                </div>
+                            </Link>
+                        </SwiperSlide>
+
+
+                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
+                            <Link to="/profile">
+                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
+                                <div >
+                                    <div className=' ml-2'>
+                                        <h6 className='text-left text-base '>Web development</h6>
+                                        <h4 className='text-left text-3xl font-semibold'>Data Mining</h4>
+
+                                        <p className='mn-cr-name mt-2 text-left text-gray-400 font-semibold capitalize '>narendra Modi </p>
+
+                                    </div>
+                                    <div className='flex justify-between mx-2 my-2'>
+                                        <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
+                                        <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
+                                    </div>
+                                </div>
+                            </Link>
+                        </SwiperSlide>
+
+
+                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
+                            <Link to="/profile">
+                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
+                                <div >
+                                    <div className=' ml-2'>
+                                        <h6 className='text-left text-base '>Web development</h6>
+                                        <h4 className='text-left text-3xl font-semibold'>Data Mining</h4>
+
+                                        <p className='mn-cr-name mt-2 text-left text-gray-400 font-semibold capitalize '>narendra Modi </p>
+
+                                    </div>
+                                    <div className='flex justify-between mx-2 my-2'>
+                                        <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
+                                        <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
+                                    </div>
+                                </div>
+                            </Link>
+                        </SwiperSlide>
+
+
+                        
+                        
+                    </Swiper>
                 </div>
             </div>
-
-
-
-
-
-
-            <div className="mn_cr_con_row mx-2 rounded-lg my-5">
-                <div className='my-3 flex flex-wrap'>
-
-
-                    <div className='border-2 mn_courses_con mx-auto'>
-                        {/* <h1 className='text-center text-lg font-bold pr_color'>Management</h1> */}
-                        <img className='mn_cr_img' src="https://d2ms8rpfqc4h24.cloudfront.net/Guide_to_Full_Stack_Development_000eb0b2d0.jpg" alt="" srcset="" />
-                        <div className='p-1 '>
-                            <h1 className='font-bold text-xl'>Web Development</h1>
-                            <p className='mn_cr_card_desc text-sm text-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, minima?</p>
-                            <div className='flex justify-between'>
-                                <h5 className='flex place-items-end'>         <CiClock2 className='pb-1 text-base ' /><p className='text-sm'>3.0 Hrs</p></h5>
-                                <button className='mn_cr_card_btn'>Explore</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='border-2 mn_courses_con mx-auto'>
-                        {/* <h1 className='text-center text-lg font-bold pr_color'>Management</h1> */}
-                        <img className='mn_cr_img' src="https://d2ms8rpfqc4h24.cloudfront.net/Guide_to_Full_Stack_Development_000eb0b2d0.jpg" alt="" srcset="" />
-                        <div className='p-1 '>
-                            <h1 className='font-bold text-xl'>Web Development</h1>
-                            <p className='mn_cr_card_desc text-sm text-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, minima?</p>
-                            <div className='flex justify-between'>
-                                <h5 className='flex place-items-end'>         <CiClock2 className='pb-1 text-base ' /><p className='text-sm'>3.0 Hrs</p></h5>
-                                <button className='mn_cr_card_btn'>Explore</button>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div className='border-2 mn_courses_con mx-auto'>
-                        {/* <h1 className='text-center text-lg font-bold pr_color'>Management</h1> */}
-                        <img className='mn_cr_img' src="https://d2ms8rpfqc4h24.cloudfront.net/Guide_to_Full_Stack_Development_000eb0b2d0.jpg" alt="" srcset="" />
-                        <div className='p-1 '>
-                            <h1 className='font-bold text-xl'>Web Development</h1>
-                            <p className='mn_cr_card_desc text-sm text-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, minima?</p>
-                            <div className='flex justify-between'>
-                                <h5 className='flex place-items-end'>         <CiClock2 className='pb-1 text-base ' /><p className='text-sm'>3.0 Hrs</p></h5>
-                                <button className='mn_cr_card_btn'>Explore</button>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div className='border-2 mn_courses_con mx-auto'>
-                        {/* <h1 className='text-center text-lg font-bold pr_color'>Management</h1> */}
-                        <img className='mn_cr_img' src="https://d2ms8rpfqc4h24.cloudfront.net/Guide_to_Full_Stack_Development_000eb0b2d0.jpg" alt="" srcset="" />
-                        <div className='p-1 '>
-                            <h1 className='font-bold text-xl'>Web Development</h1>
-                            <p className='mn_cr_card_desc text-sm text-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, minima?</p>
-                            <div className='flex justify-between'>
-                                <h5 className='flex place-items-end'>         <CiClock2 className='pb-1 text-base ' /><p className='text-sm'>3.0 Hrs</p></h5>
-                                <button className='mn_cr_card_btn'>Explore</button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
         </>
     )
 }

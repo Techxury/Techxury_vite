@@ -9,5 +9,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Kalnia', serif;
+    font-family: 'Prompt', sans-serif;
+}
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 30%, rgba(9,9,121,1) 100%);
 }

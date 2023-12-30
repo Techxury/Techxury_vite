@@ -174,65 +174,6 @@ nav {
 
 
 
-/* courses css srarted */
-.mn_courses_con{
-  width: 18rem;
-  height: auto;
-  border: .2px solid rgb(15, 15, 15);
-  margin: 0.5rem 0;
-}
-.mn_courses_con:hover{
-  background: #940B92;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  /* text-align: center; */
-  color: white;
-  transition: 0.4s;
-  transform: scale(1.07);
-}
-/* .mn_cr_con_row {
-  border: 2px solid #652cb3;
-} */
-.mn_cr_card_btn {
-  color: white;
-  background: #000000;
-  padding: 0.3rem 1rem;
-  border-radius: 4px;
-
-}
-/* .mn_cr_card_title,
-.mn_cr_card_desc {
-  
-  color: #652cb3;
-}
-.mn_courses_con:hover > .mn_cr_card_desc {
-  
-  color: #ffffff;
-} */
-.mn_cr_card:hover > .mn_cr_card_btn {
-  color: black;
-  background: rgb(255, 254, 253);
-  transition: 1s;
-}
-.mn_cr_img {
-  width: 100%;
-  height: 12rem;
-}
-
-.cr_see_btn {
-  background: #d0bfe8;
-  color: #652cb3;
-  border: 2px solid #652cb3;
-}
-
-.cr_head_design {
-  height: 60vh;
-  background: #ff4c68;
-  /* filter: blur(20px); */
-  /* -webkit-backdrop-filter: blur(20px); */
-}
-.cr_head_text {
-  width: 30vw;
-}
 
 
 
