@@ -12,6 +12,28 @@
     font-family: 'Prompt', sans-serif;
 }
 body{
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 30%, rgba(9,9,121,1) 100%);
+    /* background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 30%, rgba(9,9,121,1) 100%); */
+background: rgb(105,105,107);
+background: linear-gradient(90deg, rgba(105,105,107,1) 0%, rgba(0,0,0,1) 100%);  
+/* background: linear-gradient(300deg, #652CB3, #ff4c68, rgb(238, 255, 0)); */
+  background-size: 180% 180%;
+  animation: gradient-animation 8s ease infinite; 
+}
+
+
+@keyframes gradient-animation {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+  
+  
+
+  
 }

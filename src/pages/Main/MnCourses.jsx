@@ -27,9 +27,7 @@ const Courses = () => {
                     <Swiper
                         slidesPerView={1}
                         spaceBetween={8}
-                        pagination={{
-                            clickable: true,
-                        }}
+                        
                         breakpoints={{
                             '@0.00': {
                                 slidesPerView: 1,
@@ -51,7 +49,7 @@ const Courses = () => {
                         modules={[Pagination]}
                         className="mySwiper"
                     >
-                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
+                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden cursor-pointer'>
                             <Link to="/profile">
                                 <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
                                 <div >
@@ -71,7 +69,7 @@ const Courses = () => {
                         </SwiperSlide>
 
 
-                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
+                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden cursor-pointer'>
                             <Link to="/profile">
                                 <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
                                 <div >

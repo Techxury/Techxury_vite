@@ -51,11 +51,16 @@
   }
   .mn_cr_data:hover .mn-cr-name{
     transition: .4s;
-    color: white;
+    color: black;
   }
   .mn_cr_data:hover{
-    background: rgb(240, 109, 21);
-    color: white;
+    background: white;
+    /* box-shadow: 10px 10px 5px lightblue inset; */
+    /* border: 2px solid red; */
+    border-color: #66afe9;
+    -webkit-box-shadow: inset 5px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 5px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    color: rgb(0, 0, 0);
     transition: 0.4s;
-  transform: scale(1.03);
+  /* transform: scale(1.03); */
   }
