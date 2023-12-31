@@ -5,7 +5,7 @@
   color: var(--pur-color);
 }
 .pr_color {
-  color: #652cb3;
+  color: #ffb400;
 }
 .hello_world {
   color: red;
@@ -139,7 +139,7 @@ nav {
   border: 2px solid black;
 }
 .pr_bg_color {
-  background: #efe9f7;
+  background: #3C4043;
   border: 3px solid #652cb3;
   border-radius: 30px;
 }
@@ -185,30 +185,35 @@ nav {
 }
 .pr_infor_input {
   appearance: none;
+  background: transparent;
   border: 2px solid rgb(138, 65, 206, 0.818);
   height: 2rem;
   width: 95%;
   border-radius: 0.5rem;
   /* font-size: 1.2rem; */
   font-weight: bold;
-  color: blueviolet;
+  color: white;
   outline: red;
   cursor: pointer;
   padding-left: 0.5rem;
 }
 .pr_infor_input:hover {
   border: 2px solid orangered;
-  background: #ede1ff;
+  /* background: tb; */
 }
 .pr_infor_input:focus {
   outline: none;
   border: 2px solid orangered;
 }
-/* .pr_ex_text{
-  width: 60vw;
-}
+ .pr_ex_text{
+  color: white;
+} /*
 @media(maxwidth:620px){
   .pr_ex_text{
     width: 100vw;
   }
 } */
+.lg_color_wt{
+  /* color: #ffb400; */
+  color: white;
+}

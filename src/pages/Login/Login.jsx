@@ -1,3 +1,4 @@
+import { color } from 'framer-motion'
 import React from 'react'
 import { NavLink , Link} from 'react-router-dom'
 const Login = () => {
@@ -5,7 +6,7 @@ const Login = () => {
     <>
      <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-          <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
+          <h2 className="lg_color_wt mt-10 text-center text-2xl font-bold leading-9 tracking-tight ">
             Sign in to your account
           </h2>
         </div>
@@ -13,7 +14,7 @@ const Login = () => {
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           <form className="space-y-6" action="#" method="POST">
             <div>
-              <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+              <label htmlFor="email" className="lg_color_wt block text-sm font-medium leading-6 ">
                 Email address
               </label>
               <div className="mt-2">

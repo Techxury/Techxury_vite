@@ -49,9 +49,9 @@ const Courses = () => {
                         modules={[Pagination]}
                         className="mySwiper"
                     >
-                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden cursor-pointer'>
+                        <SwiperSlide className='mn_cr_data overflow-hidden cursor-pointer'>
                             <Link to="/profile">
-                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
+                                <div className='cr_mn_img'><img src="https://images.pexels.com/photos/9487467/pexels-photo-9487467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className='cr_mn_img ' alt="" srcset="" /></div>
                                 <div >
                                     <div className=' ml-2'>
                                         <h6 className='text-left text-base '>Web development</h6>
@@ -64,14 +64,16 @@ const Courses = () => {
                                         <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
                                         <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
                                     </div>
+                                    <hr className='mx-2 border-black' />
                                 </div>
                             </Link>
                         </SwiperSlide>
 
 
-                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden cursor-pointer'>
+                       
+                        <SwiperSlide className='mn_cr_data overflow-hidden cursor-pointer'>
                             <Link to="/profile">
-                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
+                                <div className='cr_mn_img'><img src="https://images.pexels.com/photos/9487467/pexels-photo-9487467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className='cr_mn_img ' alt="" srcset="" /></div>
                                 <div >
                                     <div className=' ml-2'>
                                         <h6 className='text-left text-base '>Web development</h6>
@@ -84,14 +86,12 @@ const Courses = () => {
                                         <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
                                         <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
                                     </div>
+                                    <hr className='mx-2 border-black' />
                                 </div>
                             </Link>
-                        </SwiperSlide>
-
-
-                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
+                        </SwiperSlide><SwiperSlide className='mn_cr_data overflow-hidden cursor-pointer'>
                             <Link to="/profile">
-                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
+                                <div className='cr_mn_img'><img src="https://images.pexels.com/photos/9487467/pexels-photo-9487467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className='cr_mn_img ' alt="" srcset="" /></div>
                                 <div >
                                     <div className=' ml-2'>
                                         <h6 className='text-left text-base '>Web development</h6>
@@ -104,14 +104,12 @@ const Courses = () => {
                                         <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
                                         <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
                                     </div>
+                                    <hr className='mx-2 border-black' />
                                 </div>
                             </Link>
-                        </SwiperSlide>
-
-
-                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
+                        </SwiperSlide><SwiperSlide className='mn_cr_data overflow-hidden cursor-pointer'>
                             <Link to="/profile">
-                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
+                                <div className='cr_mn_img'><img src="https://images.pexels.com/photos/9487467/pexels-photo-9487467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className='cr_mn_img ' alt="" srcset="" /></div>
                                 <div >
                                     <div className=' ml-2'>
                                         <h6 className='text-left text-base '>Web development</h6>
@@ -124,14 +122,12 @@ const Courses = () => {
                                         <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
                                         <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
                                     </div>
+                                    <hr className='mx-2 border-black' />
                                 </div>
                             </Link>
-                        </SwiperSlide>
-
-
-                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
+                        </SwiperSlide><SwiperSlide className='mn_cr_data overflow-hidden cursor-pointer'>
                             <Link to="/profile">
-                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
+                                <div className='cr_mn_img'><img src="https://images.pexels.com/photos/9487467/pexels-photo-9487467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className='cr_mn_img ' alt="" srcset="" /></div>
                                 <div >
                                     <div className=' ml-2'>
                                         <h6 className='text-left text-base '>Web development</h6>
@@ -144,13 +140,12 @@ const Courses = () => {
                                         <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
                                         <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
                                     </div>
+                                    <hr className='mx-2 border-black' />
                                 </div>
                             </Link>
-                        </SwiperSlide>
-
-                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
+                        </SwiperSlide><SwiperSlide className='mn_cr_data overflow-hidden cursor-pointer'>
                             <Link to="/profile">
-                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
+                                <div className='cr_mn_img'><img src="https://images.pexels.com/photos/9487467/pexels-photo-9487467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className='cr_mn_img ' alt="" srcset="" /></div>
                                 <div >
                                     <div className=' ml-2'>
                                         <h6 className='text-left text-base '>Web development</h6>
@@ -163,14 +158,12 @@ const Courses = () => {
                                         <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
                                         <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
                                     </div>
+                                    <hr className='mx-2 border-black' />
                                 </div>
                             </Link>
-                        </SwiperSlide>
-
-
-                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
+                        </SwiperSlide><SwiperSlide className='mn_cr_data overflow-hidden cursor-pointer'>
                             <Link to="/profile">
-                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
+                                <div className='cr_mn_img'><img src="https://images.pexels.com/photos/9487467/pexels-photo-9487467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className='cr_mn_img ' alt="" srcset="" /></div>
                                 <div >
                                     <div className=' ml-2'>
                                         <h6 className='text-left text-base '>Web development</h6>
@@ -183,14 +176,12 @@ const Courses = () => {
                                         <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
                                         <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
                                     </div>
+                                    <hr className='mx-2 border-black' />
                                 </div>
                             </Link>
-                        </SwiperSlide>
-
-
-                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
+                        </SwiperSlide><SwiperSlide className='mn_cr_data overflow-hidden cursor-pointer'>
                             <Link to="/profile">
-                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
+                                <div className='cr_mn_img'><img src="https://images.pexels.com/photos/9487467/pexels-photo-9487467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className='cr_mn_img ' alt="" srcset="" /></div>
                                 <div >
                                     <div className=' ml-2'>
                                         <h6 className='text-left text-base '>Web development</h6>
@@ -203,152 +194,10 @@ const Courses = () => {
                                         <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
                                         <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
                                     </div>
+                                    <hr className='mx-2 border-black' />
                                 </div>
                             </Link>
                         </SwiperSlide>
-
-
-                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
-                            <Link to="/profile">
-                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
-                                <div >
-                                    <div className=' ml-2'>
-                                        <h6 className='text-left text-base '>Web development</h6>
-                                        <h4 className='text-left text-3xl font-semibold'>Data Mining</h4>
-
-                                        <p className='mn-cr-name mt-2 text-left text-gray-400 font-semibold capitalize '>narendra Modi </p>
-
-                                    </div>
-                                    <div className='flex justify-between mx-2 my-2'>
-                                        <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
-                                        <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
-                                    </div>
-                                </div>
-                            </Link>
-                        </SwiperSlide>
-
-
-                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
-                            <Link to="/profile">
-                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
-                                <div >
-                                    <div className=' ml-2'>
-                                        <h6 className='text-left text-base '>Web development</h6>
-                                        <h4 className='text-left text-3xl font-semibold'>Data Mining</h4>
-
-                                        <p className='mn-cr-name mt-2 text-left text-gray-400 font-semibold capitalize '>narendra Modi </p>
-
-                                    </div>
-                                    <div className='flex justify-between mx-2 my-2'>
-                                        <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
-                                        <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
-                                    </div>
-                                </div>
-                            </Link>
-                        </SwiperSlide>
-
-
-                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
-                            <Link to="/profile">
-                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
-                                <div >
-                                    <div className=' ml-2'>
-                                        <h6 className='text-left text-base '>Web development</h6>
-                                        <h4 className='text-left text-3xl font-semibold'>Data Mining</h4>
-
-                                        <p className='mn-cr-name mt-2 text-left text-gray-400 font-semibold capitalize '>narendra Modi </p>
-
-                                    </div>
-                                    <div className='flex justify-between mx-2 my-2'>
-                                        <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
-                                        <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
-                                    </div>
-                                </div>
-                            </Link>
-                        </SwiperSlide>
-
-
-                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
-                            <Link to="/profile">
-                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
-                                <div >
-                                    <div className=' ml-2'>
-                                        <h6 className='text-left text-base '>Web development</h6>
-                                        <h4 className='text-left text-3xl font-semibold'>Data Mining</h4>
-
-                                        <p className='mn-cr-name mt-2 text-left text-gray-400 font-semibold capitalize '>narendra Modi </p>
-
-                                    </div>
-                                    <div className='flex justify-between mx-2 my-2'>
-                                        <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
-                                        <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
-                                    </div>
-                                </div>
-                            </Link>
-                        </SwiperSlide>
-
-
-                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
-                            <Link to="/profile">
-                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
-                                <div >
-                                    <div className=' ml-2'>
-                                        <h6 className='text-left text-base '>Web development</h6>
-                                        <h4 className='text-left text-3xl font-semibold'>Data Mining</h4>
-
-                                        <p className='mn-cr-name mt-2 text-left text-gray-400 font-semibold capitalize '>narendra Modi </p>
-
-                                    </div>
-                                    <div className='flex justify-between mx-2 my-2'>
-                                        <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
-                                        <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
-                                    </div>
-                                </div>
-                            </Link>
-                        </SwiperSlide>
-
-
-                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
-                            <Link to="/profile">
-                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
-                                <div >
-                                    <div className=' ml-2'>
-                                        <h6 className='text-left text-base '>Web development</h6>
-                                        <h4 className='text-left text-3xl font-semibold'>Data Mining</h4>
-
-                                        <p className='mn-cr-name mt-2 text-left text-gray-400 font-semibold capitalize '>narendra Modi </p>
-
-                                    </div>
-                                    <div className='flex justify-between mx-2 my-2'>
-                                        <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
-                                        <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
-                                    </div>
-                                </div>
-                            </Link>
-                        </SwiperSlide>
-
-
-                        <SwiperSlide className='mn_cr_data rounded-2xl overflow-hidden'>
-                            <Link to="/profile">
-                                <div><img src="./img/cr2.webp" className='w-full h-40 rounded-b-2xl' alt="" srcset="" /></div>
-                                <div >
-                                    <div className=' ml-2'>
-                                        <h6 className='text-left text-base '>Web development</h6>
-                                        <h4 className='text-left text-3xl font-semibold'>Data Mining</h4>
-
-                                        <p className='mn-cr-name mt-2 text-left text-gray-400 font-semibold capitalize '>narendra Modi </p>
-
-                                    </div>
-                                    <div className='flex justify-between mx-2 my-2'>
-                                        <div className='flex text-sm my-auto'><FaBook className=' my-auto mr-1' />9 Lesson</div>
-                                        <div className='flex text-sm my-auto'><IoMdTime className=' my-auto mr-1' />3hr</div>
-                                    </div>
-                                </div>
-                            </Link>
-                        </SwiperSlide>
-
-
-                        
                         
                     </Swiper>
                 </div>

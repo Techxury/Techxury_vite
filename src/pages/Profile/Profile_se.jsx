@@ -14,15 +14,15 @@ const Profile_se = () => {
         <div className='pr_main_con grid lg:grid-cols-2 sm:grid-cols-2'>
           <div className='flex flex-col gap-5 ml-3 my-3'>
             <div>
-              <h2 className='text-lg font-semibold'>Name:</h2>
+              <h2 className='text-lg font-semibold lg_color_wt'>Name:</h2>
               <input className='pr_infor_input' type="text" />
             </div>
             <div>
-              <h2 className='text-lg font-semibold'>Loacation:</h2>
+              <h2 className='text-lg font-semibold lg_color_wt'>Loacation:</h2>
               <input className='pr_infor_input' type="text" />
             </div>
             <div>
-              <h2 className='text-lg font-semibold'>Current job Title (if applicable):</h2>
+              <h2 className='text-lg font-semibold lg_color_wt'>Current job Title (if applicable):</h2>
               <input className='pr_infor_input' type="text" />
             </div>
           </div>
@@ -30,7 +30,7 @@ const Profile_se = () => {
           <div className='flex flex-col gap-5 ml-3 my-3'>
 
             <div>
-              <h2 className='text-lg font-semibold'>Gender:</h2>
+              <h2 className='text-lg font-semibold lg_color_wt'>Gender:</h2>
               <select name="gender" id="gender" className='pr_infor_input'>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
@@ -39,12 +39,12 @@ const Profile_se = () => {
             </div>
 
             <div>
-              <h2 className='text-lg font-semibold'>Phone Number:</h2>
+              <h2 className='text-lg font-semibold lg_color_wt'>Phone Number:</h2>
               <input className='pr_infor_input' type="number" />
             </div>
 
             <div>
-              <h2 className='text-lg font-semibold'>Interests and Hobbies:</h2>
+              <h2 className='text-lg font-semibold lg_color_wt'>Interests and Hobbies:</h2>
               <input className='pr_infor_input' type="text" />
             </div>
 
@@ -58,21 +58,21 @@ const Profile_se = () => {
       <div className='container mx-auto my-3'>
 
         <div className='my-2'>
-          <h1 className='pr_color text-3xl font-semibold'>Education:</h1>
+          <h1 className='pr_color text-3xl font-semibold lg_color_wt'>Education:</h1>
         </div>
 
         <div className='pr_main_con grid lg:grid-cols-2 sm:grid-cols-2'>
           <div className='flex flex-col gap-5 ml-3 my-3'>
             <div>
-              <h2 className='text-lg font-semibold'>Highest Level of Education:</h2>
+              <h2 className='text-lg font-semibold lg_color_wt'>Highest Level of Education:</h2>
               <input className='pr_infor_input' type="text" />
             </div>
             <div>
-              <h2 className='text-lg font-semibold'>Certification</h2>
+              <h2 className='text-lg font-semibold lg_color_wt'>Certification</h2>
               <input className='pr_infor_input' type="file" />
             </div>
             <div>
-              <h2 className='text-lg font-semibold'>Year of Graduation:</h2>
+              <h2 className='text-lg font-semibold lg_color_wt'>Year of Graduation:</h2>
               <input className='pr_infor_input' type="text" />
             </div>
           </div>
@@ -81,17 +81,17 @@ const Profile_se = () => {
 
 
             <div>
-              <h2 className='text-lg font-semibold'>Institution/University Name:</h2>
+              <h2 className='text-lg font-semibold lg_color_wt'>Institution/University Name:</h2>
               <input className='pr_infor_input' type="text" />
             </div>
 
             <div>
-              <h2 className='text-lg font-semibold'>Field of Study or Major:</h2>
+              <h2 className='text-lg font-semibold lg_color_wt'>Field of Study or Major:</h2>
               <input className='pr_infor_input' type="text" />
             </div>
 
             <div>
-              <h2 className='text-lg font-semibold'>Other Information:</h2>
+              <h2 className='text-lg font-semibold lg_color_wt'>Other Information:</h2>
               <input className='pr_infor_input' type="text" />
             </div>
 
