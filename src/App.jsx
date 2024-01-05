@@ -1,5 +1,6 @@
 import './App.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { useEffect, useState  } from 'react'
 
 
 // components links
@@ -18,20 +19,21 @@ import Otp from './pages/Login/Otp'
 import About from './pages/About/About'
 // comoponents link end 
 function App() {
-  
+
+ 
 
   return (
     <>
       <Router>
-      <Header />
+        <Header />
         <Routes>
-          <Route path='/' element={<Main />} /> 
-          <Route path='/courses' element={<Courses />} /> 
-          <Route path='/profile' element={<Identity />} /> 
+          <Route path='/' element={<Main />} />
+          <Route path='/courses' element={<Courses />} />
+          <Route path='/profile' element={<Identity />} />
           <Route path='/login' element={<Login />} />
-<Route path='/About' element={<About />} />
+          <Route path='/About' element={<About />} />
           <Route path='/login/Otp' element={<Otp />} />
-         </Routes>
+        </Routes>
         <Footer />
       </Router>
     </>

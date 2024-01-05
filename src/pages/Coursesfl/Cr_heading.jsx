@@ -1,12 +1,36 @@
-import React from 'react'
-
+import React, { useEffect } from 'react';
+import CLOUDS from 'vanta/src/vanta.clouds'
+import FOG from 'vanta/src/vanta.fog'
 const Cr_heading = () => {
+
+
+  useEffect(() => {
+    FOG({
+      el: '#vanta_bg',
+      mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  highlightColor: 0x0,
+  midtoneColor: 0x0,
+  lowlightColor: 0xffffff,
+  baseColor: 0x0,
+  blurFactor: 0.45,
+  speed: 3.20,
+  zoom: 2.40
+    })
+  }, [])
+
+
+
+
   return (
     <>
-      <div className='cr_head_design flex justify-center place-content-center'>
+      <div id='vanta_bg' className='cr_head_design flex justify-center place-content-center text-white  -z-10 h-screen'>
         <div className='cr_head_text border mx-auto my-auto'>
-            <h1 className='text-3xl font-bold text-center'>Online Courses</h1>
-            <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates illum nulla perferendis veniam sit id nam cumque quae pariatur odio.</p>
+          <h1 className='text-3xl font-bold text-center'>Online Courses</h1>
+          <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates illum nulla perferendis veniam sit id nam cumque quae pariatur odio.</p>
         </div>
       </div>
     </>

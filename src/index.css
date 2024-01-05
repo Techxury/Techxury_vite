@@ -11,14 +11,11 @@
     box-sizing: border-box;
     font-family: 'Prompt', sans-serif;
 }
-body{
-    /* background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%); */
-/* background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,1) 28%, rgba(110,141,212,1) 100%);   */
+/* body{
+    
 background: rgb(0,0,0);
 background: linear-gradient(90deg, rgba(0,0,0,1) 29%, rgba(77,77,77,1) 100%); 
-/* background: linear-gradient(300deg, #652CB3, #ff4c68, rgb(238, 255, 0)); */
+
   background-size: 180% 180%;
   animation: gradient-animation 8s ease infinite; 
 }
@@ -38,4 +35,4 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 29%, rgba(77,77,77,1) 100%);
   
 
   
-}
+} */
