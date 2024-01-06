@@ -13,12 +13,9 @@ const Cr_heading = () => {
   minHeight: 200.00,
   minWidth: 200.00,
   highlightColor: 0x0,
-  midtoneColor: 0x0,
-  lowlightColor: 0xffffff,
-  baseColor: 0x0,
-  blurFactor: 0.45,
-  speed: 3.20,
-  zoom: 2.40
+  midtoneColor: 0x6adbff,
+  lowlightColor: 0xd1d1d1,
+  baseColor: 0xe0e0e0
     })
   }, [])
 
@@ -27,7 +24,7 @@ const Cr_heading = () => {
 
   return (
     <>
-      <div id='vanta_bg' className='cr_head_design flex justify-center place-content-center text-white  -z-10 h-screen'>
+      <div id='vanta_bg' className='cr_head_design flex justify-center place-content-center   -z-10 h-screen'>
         <div className='cr_head_text border mx-auto my-auto'>
           <h1 className='text-3xl font-bold text-center'>Online Courses</h1>
           <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates illum nulla perferendis veniam sit id nam cumque quae pariatur odio.</p>
