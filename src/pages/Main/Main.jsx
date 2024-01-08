@@ -20,6 +20,22 @@ const Main = () => {
         })
     }, [])
 
+
+    useEffect(() => {
+        FOG({
+            el: '#vanta_bg4',
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            highlightColor: 0x0,
+            midtoneColor: 0x6adbff,
+            lowlightColor: 0xd1d1d1,
+            baseColor: 0xe0e0e0
+        })
+    }, [])
+
     return (
         <>
             {/* <Careousel /> */}
@@ -54,10 +70,10 @@ const Main = () => {
                     </div>
                 </div>
 
+</div>
+<div id='vanta_bg4'>
 
-
-
-                <div className="container my-3 mx-auto">
+                <div className="container py-3 mx-auto">
                     <div className="lg:columns-2  sm:columns-1" >
                         <div className="flex align-middle my-3">
                             <img className='mx-auto' src="./img/con3.webp" width={500} alt="" srcset="" />
