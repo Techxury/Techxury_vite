@@ -5,36 +5,7 @@ import Careousel from './Careousel'
 import FOG from 'vanta/src/vanta.fog'
 const Main = () => {
 
-    useEffect(() => {
-        FOG({
-            el: '#vanta_bg3',
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            highlightColor: 0x0,
-            midtoneColor: 0x6adbff,
-            lowlightColor: 0xd1d1d1,
-            baseColor: 0xe0e0e0
-        })
-    }, [])
 
-
-    useEffect(() => {
-        FOG({
-            el: '#vanta_bg4',
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            highlightColor: 0x0,
-            midtoneColor: 0x6adbff,
-            lowlightColor: 0xd1d1d1,
-            baseColor: 0xe0e0e0
-        })
-    }, [])
 
     return (
         <>

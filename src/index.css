@@ -11,7 +11,7 @@
     box-sizing: border-box;
     font-family: 'Prompt', sans-serif;
 }
-/* body{
+body{
     
 background: rgb(0,0,0);
 background: linear-gradient(90deg, rgba(0,0,0,1) 29%, rgba(77,77,77,1) 100%); 
@@ -30,9 +30,5 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 29%, rgba(77,77,77,1) 100%);
   }
   100%{
     background-position: 0% 50%;
-  }
-  
-  
-
-  
-} */
+  }  
+}

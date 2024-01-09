@@ -15,25 +15,6 @@ import { IoMdTime } from "react-icons/io";
 import { FaArrowRightLong } from "react-icons/fa6";
 import FOG from 'vanta/src/vanta.fog'
 const Courses = () => {
-
-    useEffect(() => {
-        FOG({
-            el: '#vanta_bg2',
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            highlightColor: 0x0,
-            midtoneColor: 0x6adbff,
-            lowlightColor: 0xd1d1d1,
-            baseColor: 0xe0e0e0
-        })
-    }, [])
-
-
-
-
     return (
         <>
             {/* <CoursesNews /> */}
